@@ -20,9 +20,9 @@
 
 // scrollspy offset fix
 $(document).ready(function() {
-  var offset = -90;
-
   $(".navbar li a").click(function(event) {
+    var offset = -90;
+
     event.preventDefault();
 
     // verify if section id is home so make scrollspy offset = 0
@@ -30,6 +30,8 @@ $(document).ready(function() {
     if (idRef == "home") {
       offset = 0;
     }
+
+    console.log(offset);
 
     $($(this).attr("href"))[0].scrollIntoView();
     scrollBy(0, -offset);
