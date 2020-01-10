@@ -17,3 +17,21 @@
     });
   });
 })(jQuery);
+
+// scrollspy offset fix
+$(document).ready(function() {
+  var offset = -90;
+
+  $(".navbar li a").click(function(event) {
+    event.preventDefault();
+
+    // verify if section id is home so make scrollspy offset = 0
+    idRef = $($(this).attr("href"))[0]["id"];
+    if (idRef == "home") {
+      offset = 0;
+    }
+
+    $($(this).attr("href"))[0].scrollIntoView();
+    scrollBy(0, -offset);
+  });
+});
