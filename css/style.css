@@ -338,30 +338,16 @@ html {
     padding-bottom: 100px;
 }
 
-.screen-slider {}
-
-.screen-list {}
-
-.screen-item {}
-
-.screen-item img {}
-
-/* color of prev control (<). change fill prop %23(hex) */
-.screens .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23129CF3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-/* color of next control (>). change fill prop %23(hex)*/
+/* color of indicator control */
+.screens .carousel-control-prev-icon,
 .screens .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23129CF3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    background-image: none;
+    color: #129CF3;
+    font-size: 28px;
 }
 
-/* position of prev control (<) */
-.screens .carousel-control-prev {
-    width: 2%
-}
-
-/* position of next control (>) */
+/* position of indicator control */
+.screens .carousel-control-prev,
 .screens .carousel-control-next {
     width: 2%
 }
