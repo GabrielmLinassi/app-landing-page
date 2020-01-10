@@ -15,90 +15,91 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <!-- Header Section -->
-    <section id="home">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a href="#home" class="navbar-brand">
-          <img src="./images/logo-small.png" alt="" srcset="" />
-        </a>
+  <body data-spy="scroll" data-target="#top-navbar">
+    <nav
+      id="top-navbar"
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
+    >
+      <a href="#home" class="navbar-brand">
+        <img src="./images/logo-small.png" alt="" srcset="" />
+      </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link">HOME</a>
-            </li>
-            <li class="nav-item active">
-              <a href="#about" class="nav-link">ABOUT</a>
-            </li>
-            <li class="nav-item active">
-              <a href="#features" class="nav-link">FEATURES</a>
-            </li>
-            <li class="nav-item active">
-              <a href="#screns" class="nav-link">SCREENS</a>
-            </li>
-            <li class="nav-item active">
-              <a href="#download" class="nav-link">DOWNLOAD</a>
-            </li>
-            <li class="nav-item active">
-              <a href="#contact" class="nav-link">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#screens" class="nav-link">SCREENS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#download" class="nav-link">DOWNLOAD</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <div class="header">
-        <div class="header-overlay">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="logo text-center">
-                  <img
-                    class="img-fluid"
-                    src="./images/logo.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="home-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="logo text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/logo.png"
+                  alt=""
+                  srcset=""
+                />
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-7 offset-1">
-                <div class="header-text">
-                  <h1>A clean and modern looking responsive Website</h1>
-                  <p>Build with great love!</p>
-                </div>
-                <div class="header-btns">
-                  <a href="#" class="btn btn-outline-light btn-download"
-                    >Download</a
-                  >
-                  <a href="#" class="btn btn-outline-light btn-tour"
-                    >Take a Tour</a
-                  >
-                  <i class="fa fa-angle-down"></i>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 offset-1">
+              <div class="home-text">
+                <h1>A clean and modern looking responsive Website</h1>
+                <p>Build with great love!</p>
               </div>
-              <div class="col-3 offset-1">
-                <div class="header-phone">
-                  <img
-                    class="img-cellphone-header img-fluid"
-                    src="./images/iphone-header.png"
-                    alt="Header Iphone"
-                    srcset=""
-                  />
-                </div>
+              <div class="home-btns">
+                <a href="#" class="btn btn-outline-light btn-download"
+                  >Download</a
+                >
+                <a href="#" class="btn btn-outline-light btn-tour"
+                  >Take a Tour</a
+                >
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="col-3 offset-1">
+              <div class="home-phone">
+                <img
+                  class="img-cellphone-home img-fluid"
+                  src="./images/iphone-home.png"
+                  alt="Home Iphone"
+                  srcset=""
+                />
               </div>
             </div>
           </div>
@@ -195,7 +196,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonial">
+    <section id="testimonial" class="testimonial">
       <div class="testimonial-overlay">
         <div class="container">
           <div class="row">
@@ -300,7 +301,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features">
+    <section id="features" class="features">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -448,6 +449,142 @@
       </div>
     </section>
 
+    <!-- Screens Section -->
+    <section id="screens" class="screens">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10-offset-1">
+            <!-- title section -->
+            <div class="section-title">
+              <h2>Screens</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean
+                volutpat ullamcorper cursus. Duis tristique sit amet augue ac
+                vestibulum.
+              </p>
+            </div>
+            <!-- screens list -->
+            <div class="screen-slider">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- carousel -->
+                    <div
+                      id="carouselTestimonialIndicator2"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <!-- indicators -->
+                      <ol class="carousel-indicators">
+                        <li
+                          data-target="#carouselTestimonialIndicator2"
+                          class="active"
+                          data-slide-to="0"
+                        ></li>
+                        <li
+                          data-target="#carouselTestimonialIndicator2"
+                          data-slide-to="1"
+                        ></li>
+                      </ol>
+                      <!-- carousel itens -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                          <div class="screen-list">
+                            <div class="container">
+                              <div class="row">
+                                <!-- screen 1 -->
+                                <div class="col-md-4">
+                                  <div class="screen-item">
+                                    <img
+                                      class="img-fluid"
+                                      src="./images/screen-01.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <!-- screen 2 -->
+                                <div class="col-md-4">
+                                  <div class="screen-item">
+                                    <img
+                                      class="img-fluid"
+                                      src="./images/screen-02.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <!-- screen 3 -->
+                                <div class="col-md-4">
+                                  <div class="screen-item">
+                                    <img
+                                      class="img-fluid"
+                                      src="./images/screen-03.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="screen-list">
+                            <div class="container">
+                              <div class="row">
+                                <!-- screen 1 -->
+                                <div class="col-md-4">
+                                  <div class="screen-item">
+                                    <img
+                                      class="img-fluid"
+                                      src="./images/screen-04.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- controls -->
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselTestimonialIndicator2"
+                        role="button"
+                        data-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselTestimonialIndicator2"
+                        role="button"
+                        data-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
     <!-- JQuery -->
     <script src="./vendors/js/jquery-3.4.1.js"></script>
 
@@ -456,5 +593,9 @@
 
     <!-- Main JS -->
     <script src="./js/index.js"></script>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
   </body>
 </html>

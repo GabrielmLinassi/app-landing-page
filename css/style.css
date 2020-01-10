@@ -44,16 +44,16 @@ html {
 }
 
 
-/* =========================== header section =========================== */
-.header {
-    background-image: url('.././images/header-bg.png');
+/* =========================== Home Section =========================== */
+.home {
+    background-image: url('.././images/home-bg.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
 
-.header-overlay {
+.home-overlay {
     background-color: rgba(31, 31, 31, 0.75);
     height: 800px;
 }
@@ -62,7 +62,7 @@ html {
     padding-bottom: 50px;
 }
 
-.header-text>h1 {
+.home-text>h1 {
     color: #fff;
     font-size: 35px;
     font-weight: 300;
@@ -71,19 +71,19 @@ html {
     text-transform: uppercase;
 }
 
-.header-text>p {
+.home-text>p {
     color: #fff;
     font-size: 17px;
     line-height: 28px;
     font-weight: 300;
 }
 
-.header-btns {
+.home-btns {
     margin-top: 90px;
     margin-bottom: 50px;
 }
 
-.header-phone>img {
+.home-phone>img {
     width: 100%;
 }
 
@@ -183,11 +183,11 @@ html {
     padding-bottom: 80px;
 }
 
-.carousel-indicators {
+.testimonial .carousel-indicators {
     bottom: -30px;
 }
 
-.carousel-item img {
+.testimonial .carousel-item img {
     border: 2px solid #123CF3;
     border-radius: 50%;
     padding: 3px;
@@ -331,4 +331,50 @@ html {
 .btn-purchase-now:hover {
     background-color: #1274B1;
     border-color: #316B90;
+}
+
+/* =========================== screens section =========================== */
+.screens {
+    padding-bottom: 100px;
+}
+
+.screen-slider {}
+
+.screen-list {}
+
+.screen-item {}
+
+.screen-item img {}
+
+/* color of prev control (<). change fill prop %23(hex) */
+.screens .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23129CF3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+/* color of next control (>). change fill prop %23(hex)*/
+.screens .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23129CF3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* position of prev control (<) */
+.screens .carousel-control-prev {
+    width: 2%
+}
+
+/* position of next control (>) */
+.screens .carousel-control-next {
+    width: 2%
+}
+
+/* color of active indicator */
+.screens .carousel-indicators li.active {
+    background-color: #129CF3;
+}
+
+/* color of indicator */
+.screens .carousel-indicators li {
+    background-color: rgb(204, 208, 211);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }
