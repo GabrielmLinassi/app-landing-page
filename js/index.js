@@ -53,6 +53,8 @@ function animateCounter() {
           }
         }
       );
+    // remove class
+    $(this).removeClass("count");
   });
 }
 
