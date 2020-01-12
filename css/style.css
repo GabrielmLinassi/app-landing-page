@@ -364,3 +364,43 @@ html {
     height: 10px;
     border-radius: 100%;
 }
+
+/* =========================== counter section =========================== */
+.counter {
+    background-image: url(http://d2dtjea2l357xb.cloudfront.net/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.counter-overlay {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: rgba(0, 0, 0, .4);
+}
+
+.counter-item i {
+    font-size: 60px;
+    color: #129CF3;
+    margin-left: 100px;
+    width: 100%;
+}
+
+.counter-item h2 {
+    color: #D7DADB;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.counter-item p {
+    color: #D7DADB;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
