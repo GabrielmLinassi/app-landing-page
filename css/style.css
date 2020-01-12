@@ -45,7 +45,7 @@ html {
 
 /* =========================== Home Section =========================== */
 .home {
-  background-image: url(http://d2dtjea2l357xb.cloudfront.net/home-bg.png);
+  background-image: url(https://d2dtjea2l357xb.cloudfront.net/home-bg.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -366,7 +366,7 @@ html {
 
 /* =========================== counter section =========================== */
 .counter {
-  background-image: url(http://d2dtjea2l357xb.cloudfront.net/counter-bg.jpg);
+  background-image: url(https://d2dtjea2l357xb.cloudfront.net/counter-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
