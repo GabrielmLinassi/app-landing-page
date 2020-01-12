@@ -7,3 +7,7 @@ Udemy Course- Build a responsive website
 -> VSCode
 -> HTML, CSS, JS & Bootstrap
 -> Amazon S3 & CloudFront
+
+# New Features and Enhancements
+
+-> Automated tests and pull request workflow with Github Actions (Continious Integration)
