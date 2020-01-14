@@ -59,16 +59,92 @@ function animateCounter() {
 }
 
 // listen for elements in the viewport
-const myImgs = document.querySelectorAll(".counter");
+const myElems = document.querySelectorAll("#counter, #home");
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    // counter
+    if (entry.target.id === "counter" && entry.isIntersecting === true)
       animateCounter();
+
+    // up arrow
+    if (entry.target.id === "home") {
+      if (entry.isIntersecting) $(".up-arrow").fadeOut();
+      else $(".up-arrow").fadeIn();
     }
   });
 });
 
-myImgs.forEach(image => {
-  observer.observe(image);
+myElems.forEach(elem => {
+  observer.observe(elem);
+});
+
+// Click effect btn available download
+$("#available-btn-ios, #available-btn-android, #available-btn-windows").click(
+  function() {
+    $("#available-btn-ios").removeClass("button-clicked");
+    $("#available-btn-android").removeClass("button-clicked");
+    $("#available-btn-windows").removeClass("button-clicked");
+    $(this).addClass("button-clicked");
+  }
+);
+
+// handle download
+$("#btn-download").click(e => {
+  $plataform = $.trim($(".button-clicked").text()).toLowerCase();
+  $file = "";
+  $ext = "";
+
+  $(".must-choose-plataform").text("");
+
+  if ($plataform === "ios") {
+    $file = ".././images/home-bg.png";
+    $ext = ".apk";
+  } else if ($plataform === "android") {
+    $file = ".././images/about-iphone.png";
+    $ext = ".apk";
+  } else if ($plataform === "windows") {
+    $file = ".././images/screen-01.png";
+    $ext = ".exe";
+  } else {
+    //write under download button a plataform must be choosen
+    $(".must-choose-plataform").text("Please, choose a platform first");
+    return;
+  }
+
+  // start download
+  $("#btn-download").attr("download", $plataform + $ext);
+  $("#btn-download").attr("href", $file);
+});
+
+// animate up arrow
+$(".up-arrow, .contact-us .icons a, .available-on-item .btn").on(
+  "mouseenter",
+  function() {
+    var duration = 1;
+    TweenMax.to(this, duration / 4, { y: -15, ease: Power2.easeOut });
+    TweenMax.to(this, duration / 2, {
+      y: 0,
+      ease: Bounce.easeOut,
+      delay: duration / 4
+    });
+  }
+);
+
+// up arrow click effect to go home
+$(".up-arrow").on("click", () => {
+  $("html, body").animate({ scrollTop: 0 }, 1000);
+});
+
+// language button
+$(".languages .dropdown-item").on("click", function() {
+  $lang = "";
+
+  if (this.id === "br") {
+    $lang = "Português";
+  } else if (this.id === "us") {
+    $lang = "English";
+  }
+
+  $(".languages .dropdown .btn").text($lang);
 });
