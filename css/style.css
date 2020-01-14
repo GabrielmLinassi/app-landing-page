@@ -403,3 +403,110 @@ html {
   text-transform: uppercase;
   text-align: center;
 }
+
+/* =========================== download now section =========================== */
+.available-on {
+  background-color: #1a1a1a;
+  margin-top: -8px;
+  padding: 70px 0;
+}
+
+.available-title h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.available-title p {
+  color: #b5b5b5;
+}
+
+/* icone */
+.available-on-item i {
+  font-size: 55px;
+}
+
+.available-on-item .btn {
+  width: 100%;
+  border-color: #0f1217;
+  color: #b5b5b5;
+}
+
+.available-on-item .btn:hover,
+.available-on-item .btn:visited,
+.available-on-item .btn:focus {
+  color: #f9f9f9;
+}
+
+.available-on-item .button-clicked {
+  color: #f9f9f9;
+}
+
+.available-btn .btn {
+  width: 100%;
+  border-color: #b5b5b5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.available-btn .btn:hover {
+  transition: all 0.5s;
+}
+
+/* =========================== contact us section =========================== */
+.contact-us {
+  padding-bottom: 70px;
+}
+
+.input-wrapper .btn {
+  position: absolute;
+  right: 0;
+  width: 35%;
+  text-transform: uppercase;
+}
+
+.input-wrapper .btn i {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
+
+.contact-us .icons a {
+  font-size: 32px;
+  text-decoration: none;
+  padding: 5px;
+  color: #333333;
+}
+
+.contact-us .icons {
+  padding: 40px;
+}
+
+/* =========================== up arrow section =========================== */
+.up-arrow {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 150px 50px;
+}
+
+.up-arrow a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 28px;
+}
+
+/* =========================== up arrow section =========================== */
+.footer {
+  background-color: #f9f9f9;
+  padding: 30px 15px;
+}
+
+.footer .languages .btn {
+  padding: 10px 0;
+  width: 160px;
+}
+
+.footer .languages a {
+  cursor: pointer;
+}

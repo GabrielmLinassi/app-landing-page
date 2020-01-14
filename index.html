@@ -7,7 +7,13 @@
     <title>Responsive Website</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./vendors/css/all.css" />
+    <!-- <link rel="stylesheet" href="./vendors/css/all.css" /> -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/24734ac872.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootrstrap -->
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
@@ -55,10 +61,10 @@
             <a href="#screens" class="nav-link">SCREENS</a>
           </li>
           <li class="nav-item">
-            <a href="#download" class="nav-link">DOWNLOAD</a>
+            <a href="#download-now" class="nav-link">DOWNLOAD</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">CONTACT</a>
+            <a href="#contact-us" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -115,7 +121,7 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-10 mx-auto">
             <!-- About Us Title & Description -->
             <div class="section-title">
               <h2>about us</h2>
@@ -318,7 +324,7 @@
     <section id="features" class="features">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-10 mx-auto">
             <!-- Title Section -->
             <div class="section-title">
               <h2>features</h2>
@@ -470,7 +476,7 @@
     <section id="screens" class="screens">
       <div class="container">
         <div class="row">
-          <div class="col-md-10-offset-1">
+          <div class="col-md-10 mx-auto">
             <!-- title section -->
             <div class="section-title">
               <h2>Screens</h2>
@@ -659,12 +665,269 @@
       </div>
     </section>
 
+    <!-- Download Section -->
+    <section id="download-now" class="download-now">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <!-- section title and description -->
+            <div class="section-title">
+              <h2>download now</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean
+                volutpat ullamcorper cursus. Duis tristique sit amet augue ac
+                vestibulum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto ">
+            <div class="download-item">
+              <img
+                class="img-fluid"
+                src="./images/download-screen.png"
+                alt="download screen"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="available-on">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="available-title">
+                <h2>Available on</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent rhoncus ultricies nibh, vitae sodales purus
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <!-- available on ios -->
+                <div class="col-md-4 text-cente px-1">
+                  <div class="available-on-item">
+                    <span class="btn" id="available-btn-ios">
+                      <i class="fab fa-apple"></i>
+                      <div class="available-on-inner">
+                        <h2>iOS</h2>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <!-- available on android -->
+                <div class="col-md-4 text-center px-1">
+                  <div class="available-on-item">
+                    <span class="btn" id="available-btn-android">
+                      <i class="fab fa-android"></i>
+                      <div class="available-on-inner">
+                        <h2>Android</h2>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <!-- available on windows -->
+                <div class="col-md-4 text-center px-1">
+                  <div class="available-on-item">
+                    <span class="btn" id="available-btn-windows">
+                      <i class="fab fa-windows"></i>
+                      <div class="available-on-inner">
+                        <h2>Windows</h2>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="available-btn">
+            <div class="row">
+              <div class="col-md-4 offset-8 mt-md-5">
+                <a
+                  id="btn-download"
+                  href="#"
+                  download="app.apk"
+                  class="btn btn-outline-secondary p-md-3"
+                  >DOWNLOAD NOW</a
+                >
+                <p
+                  class="must-choose-plataform"
+                  style="color: rgb(247, 36, 36); padding-top: 10px;"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us section -->
+    <section id="contact-us" class="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <!-- title -->
+            <div class="section-title">
+              <h2>
+                contact us
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- form inputs -->
+          <div class="col-md-6">
+            <div class="input-wrapper">
+              <label for="name">Name:</label>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control"
+                  placeholder="name"
+                  id="name"
+                />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Email:</label>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="on"
+                  class="form-control"
+                  placeholder="email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="subject">Subject:</label>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="subject">
+                  <option selected>Choose...</option>
+                  <option value="1">General Information</option>
+                  <option value="2">Request for Support</option>
+                  <option value="3">Contact me for an Appointment</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-wrapper">
+              <label for="message">Message:</label>
+              <div class="input-group mb-3">
+                <textarea
+                  placeholder="message"
+                  class="form-control"
+                  id="message"
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary" type="submit">
+                  send message
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mx-auto text-center">
+            <div class="icons">
+              <a href="#" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer" class="footer">
+      <div class="container-fluid float-botton">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyrights float-left">
+              <img
+                class="float-left"
+                src="https://d2dtjea2l357xb.cloudfront.net/logo-small.png"
+                alt="logo"
+                srcset=""
+              />
+              <p class="float-left pt-1">Copyright &copy; 2020 Logo, Inc.</p>
+            </div>
+            <div class="languages float-right">
+              <div class="dropdown show dropup">
+                <a
+                  class="btn btn-outline-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <a class="dropdown-item" id="us">English</a>
+                  <a class="dropdown-item" id="br">Portuguese</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- up arrow -->
+    <div class="up-arrow">
+      <a href="#" class="fas fa-arrow-up"></a>
+    </div>
+
     <!--  -->
     <!--  -->
     <!--  -->
 
     <!-- JQuery -->
-    <script src="./vendors/js/jquery-3.4.1.js"></script>
+    <!-- <script src="./vendors/js/jquery-3.4.1.js"></script> -->
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- pooper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="./vendors/js/bootstrap.min.js"></script>
