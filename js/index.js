@@ -59,7 +59,7 @@ function animateCounter() {
 }
 
 // listen for elements in the viewport
-const myElems = document.querySelectorAll("#counter, #home");
+const myElems = document.querySelectorAll("#counter, #home, #stop-arrow");
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -71,6 +71,15 @@ observer = new IntersectionObserver(entries => {
     if (entry.target.id === "home") {
       if (entry.isIntersecting) $(".up-arrow").fadeOut();
       else $(".up-arrow").fadeIn();
+    }
+
+    // stop up arrow
+    if (entry.target.id === "stop-arrow") {
+      if (entry.isIntersecting) {
+        $(".up-arrow").animate({ margin: "170px 50px" }, 1000);
+      } else {
+        $(".up-arrow").animate({ margin: "50px 50px" }, 1000);
+      }
     }
   });
 });
@@ -134,6 +143,22 @@ $(".up-arrow, .contact-us .icons a, .available-on-item .btn").on(
 // up arrow click effect to go home
 $(".up-arrow").on("click", () => {
   $("html, body").animate({ scrollTop: 0 }, 1000);
+});
+
+// navbar item click scroll effect
+$(".nav-item a").on("click", function(e) {
+  if (this.hash == "") return;
+
+  e.preventDefault();
+
+  var hash = this.hash;
+  var offset = 110;
+
+  if (hash == "#home") offset = 0;
+
+  $("html, body").animate({ scrollTop: $(hash).offset().top + offset }, 1000);
+
+  window.location.hash = hash;
 });
 
 // language button

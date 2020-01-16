@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-body,
-html {
-  height: 1000px;
-}
-
 .section-title {
   padding-top: 90px;
   padding-bottom: 50px;
@@ -487,7 +482,7 @@ html {
   position: fixed;
   right: 0;
   bottom: 0;
-  margin: 150px 50px;
+  margin: 50px 50px;
 }
 
 .up-arrow a {
