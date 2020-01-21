@@ -77,8 +77,42 @@
   margin-bottom: 50px;
 }
 
+.home-btns a {
+  padding: 15px 50px;
+  text-transform: uppercase;
+}
+
 .home-phone > img {
   width: 100%;
+}
+
+.btn-download {
+  width: 250px;
+}
+
+.btn-tour {
+  color: #fff;
+  width: 250px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-tour i {
+  margin-left: 10px;
+  color: #fff;
+
+  animation: mover 0.5s infinite alternate;
+  -webkit-animation: mover 0.3s infinite alternate;
+}
+
+/* arrow down animation */
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 /* =========================== about us section =========================== */

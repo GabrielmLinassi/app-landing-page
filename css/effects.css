@@ -1,0 +1,144 @@
+/* =========================== splitting.js flip effect =========================== */
+.flip-3d .char {
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+  transition: -webkit-transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+  transition: transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+  transition: transform 0.6s cubic-bezier(0.6, 0, 0, 0.6), -webkit-transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+  -webkit-transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+          transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+  -webkit-transition-delay: calc(0.3s * var(--distance-percent));
+          transition-delay: calc(0.3s * var(--distance-percent));
+}
+
+.flip-3d:hover .char {
+  -webkit-transform: rotateX(-1turn);
+          transform: rotateX(-1turn);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: calc(0.3s * var(--distance-percent));
+          transition-delay: calc(0.3s * var(--distance-percent));
+  -webkit-transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+          transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+}
+
+.flip-3d {
+  -webkit-perspective: 200px;
+          perspective: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* =========================== splitting.js boucne effect =========================== */
+.bounce-it .char {
+  line-height: 1;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+          animation-timing-function: cubic-bezier(0.77, 0.02, 0.11, 0.97);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: calc(0.05s * var(--char-index));
+          animation-delay: calc(0.05s * var(--char-index));
+  -webkit-animation-duration: calc(0.2s + (0.03s * var(--char-total)));
+          animation-duration: calc(0.2s + (0.03s * var(--char-total)));
+}
+
+.bounce-it:hover .char {
+  -webkit-animation-name: bounce-char;
+          animation-name: bounce-char;
+}
+
+@-webkit-keyframes bounce-end {
+  to {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+
+@keyframes bounce-end {
+  to {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+
+@-webkit-keyframes bounce-char {
+  20% {
+    -webkit-transform: translateY(0%) scale(1.3, 0.8);
+            transform: translateY(0%) scale(1.3, 0.8);
+  }
+  70% {
+    -webkit-transform: translateY(-40%) scale(0.8, 1.2);
+            transform: translateY(-40%) scale(0.8, 1.2);
+  }
+}
+
+@keyframes bounce-char {
+  20% {
+    -webkit-transform: translateY(0%) scale(1.3, 0.8);
+            transform: translateY(0%) scale(1.3, 0.8);
+  }
+  70% {
+    -webkit-transform: translateY(-40%) scale(0.8, 1.2);
+            transform: translateY(-40%) scale(0.8, 1.2);
+  }
+}
+
+/* =========================== splitting.js zip effect =========================== */
+.zip-it .char {
+  color: #00c9b1;
+}
+
+.zip-it .char,
+.zip-it .char:before,
+.zip-it .char:after {
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.25, 1), -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.25, 1);
+  -webkit-transition-delay: calc(0.2s * var(--distance-percent));
+          transition-delay: calc(0.2s * var(--distance-percent));
+}
+
+.zip-it .char:before,
+.zip-it .char:after {
+  visibility: visible;
+  color: #fff;
+}
+
+.zip-it .char:before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 54%, 0 54%);
+          clip-path: polygon(0 0, 100% 0, 100% 54%, 0 54%);
+}
+
+.zip-it .char:after {
+  -webkit-clip-path: polygon(0 46%, 100% 46%, 100% 100%, 0 100%);
+          clip-path: polygon(0 46%, 100% 46%, 100% 100%, 0 100%);
+}
+
+.zip-it:hover .char:before {
+  -webkit-transform: translateY(-45%) scaleY(0);
+          transform: translateY(-45%) scaleY(0);
+}
+
+.zip-it:hover .char:after {
+  -webkit-transform: translateY(45%) scaleY(0);
+          transform: translateY(45%) scaleY(0);
+}
+
+.zip-it .char,
+.zip-it .char:before,
+.zip-it .char:after {
+  -webkit-transition-delay: calc(0.5s * (1 - var(--char-percent)));
+          transition-delay: calc(0.5s * (1 - var(--char-percent)));
+}
+
+.zip-it:hover .char,
+.zip-it:hover .char:before,
+.zip-it:hover .char:after {
+  -webkit-transition-delay: calc(0.5s * var(--char-percent));
+          transition-delay: calc(0.5s * var(--char-percent));
+}
+/*# sourceMappingURL=effects.css.map */

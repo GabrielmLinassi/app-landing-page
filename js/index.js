@@ -19,7 +19,7 @@
 })(jQuery);
 
 // scrollspy offset fix
-$(document).ready(function() {
+function scrollspy() {
   $(".navbar li a").click(function(event) {
     var offset = -90;
 
@@ -34,6 +34,23 @@ $(document).ready(function() {
     $($(this).attr("href"))[0].scrollIntoView();
     scrollBy(0, -offset);
   });
+}
+
+//go up effect
+function goUpEffect() {
+  setTimeout(() => {
+    gsap.from(".home-text", { opacity: 0, y: 100, duration: 1 });
+  }, 500);
+}
+
+$(document).ready(function() {
+  // splitting effect
+  Splitting();
+
+  // scrollspy effect
+  scrollspy();
+
+  goUpEffect();
 });
 
 // counter animation
@@ -126,7 +143,7 @@ $("#btn-download").click(e => {
   $("#btn-download").attr("href", $file);
 });
 
-// animate up arrow
+// animate up arrow, available-on btns
 $(".up-arrow, .contact-us .icons a, .available-on-item .btn").on(
   "mouseenter",
   function() {
@@ -139,6 +156,10 @@ $(".up-arrow, .contact-us .icons a, .available-on-item .btn").on(
     });
   }
 );
+
+$(".btn-tour").on("mouseenter", function() {
+  console.log($(".btn-tour").width());
+});
 
 // up arrow click effect to go home
 $(".up-arrow").on("click", () => {

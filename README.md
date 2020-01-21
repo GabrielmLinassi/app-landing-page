@@ -4,10 +4,12 @@ Udemy Course - Build a responsive website
 
 # Tools and skills required
 
--> VSCode
+-> VSCode IDE
 -> HTML, CSS, JS & Bootstrap
 -> Amazon S3 & CloudFront
 -> GSAP Animations
+-> Splitting.js lib
+-> SCSS pre-compiled CSS
 
 # New Features and Enhancements
 
