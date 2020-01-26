@@ -10,6 +10,7 @@ Udemy Course - Build a responsive website
 -> GSAP Animations
 -> Splitting.js lib
 -> SCSS pre-compiled CSS
+-> Owl Carousel for responsiveness
 
 # New Features and Enhancements
 
