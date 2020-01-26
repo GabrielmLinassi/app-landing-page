@@ -86,8 +86,12 @@ observer = new IntersectionObserver(entries => {
 
     // up arrow
     if (entry.target.id === "home") {
-      if (entry.isIntersecting) $(".up-arrow").fadeOut();
-      else $(".up-arrow").fadeIn();
+      if ($(window).width() >= 576) {
+        if (entry.isIntersecting) $(".up-arrow").fadeOut();
+        else $(".up-arrow").fadeIn();
+      } else {
+        $(".up-arrow").fadeOut();
+      }
     }
 
     // stop up arrow
@@ -99,6 +103,43 @@ observer = new IntersectionObserver(entries => {
       }
     }
   });
+});
+
+// owl carousel
+$(".main-content .owl-carousel").owlCarousel({
+  stagePadding: 20,
+  loop: true,
+  margin: 0,
+  nav: true,
+  navText: [
+    '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+    '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+  ],
+  navContainer: ".main-content .custom-nav",
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
+  }
+});
+
+// hide up-arrow on small screen
+$(document).ready(function() {
+  $(window)
+    .resize(function() {
+      if ($(window).width() >= 576) {
+        $(".up-arrow").fadeIn();
+      } else {
+        $(".up-arrow").fadeOut();
+      }
+    })
+    .resize();
 });
 
 myElems.forEach(elem => {
@@ -167,7 +208,7 @@ $(".up-arrow").on("click", () => {
 });
 
 // navbar item click scroll effect
-$(".nav-item a").on("click", function(e) {
+$(".nav-item a, .btn-tour").on("click", function(e) {
   if (this.hash == "") return;
 
   e.preventDefault();
