@@ -1,17 +1,12 @@
-# responsive-website-sample
+# General Information
 
-Udemy Course - Build a responsive website
+It was made as part of a course I took on Udemy named "Build a responsive website". However, I made several changes to update features originally used and improve UI / UX.
 
-# Tools and skills required
+### Tools used 
 
--> VSCode IDE
--> HTML, CSS, JS & Bootstrap
--> Amazon S3 & CloudFront
--> GSAP Animations
--> Splitting.js lib
--> SCSS pre-compiled CSS
--> Owl Carousel for responsiveness
-
-# New Features and Enhancements
-
--> Automated tests and pull request workflow with Github Actions (Continious Integration)
+- HTML, CSS, JS & Bootstrap</br>
+- Amazon S3 & CloudFront</br>
+- GSAP Animations</br>
+- Splitting.js</br>
+- SCSS</br>
+- Owl Carousel</br>
